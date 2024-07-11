@@ -1,0 +1,383 @@
+/* Style for the main titles */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #82a0aa;
+    display: flex;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background-color: #fff;
+    width: 80px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 5px;
+}
+
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 70px;
+}
+
+/* a:hover{
+    background: #eee;
+} */
+
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+
+/* main body starts*/
+.main{
+    position: relative;
+    background: ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header-title{
+    color: #3a788d;
+}
+
+.admin-info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-bar{
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 225);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 12px;
+}
+
+.search-bar input{
+    background: transparent;
+    padding: 10px;
+}
+
+.search-bar i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search-bar i:hover{
+    transform: scale(1.2);
+}
+
+/* box starts */
+
+.box-container{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.main-title{
+    color: #3a788d;;
+    padding-bottom: 10px;
+    font-size: 35px;
+}
+
+.data-box{
+    background: rgb(229, 223, 223);
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.data-box:hover{
+    transform: translateY(-5px);
+}
+
+.data-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* table starts here */
+
+.products-wrapper{
+    background: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.table-container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead{
+    background: #3a788d;
+    color: #fff;
+}
+
+th{
+	background-color: #82a0aa;
+	font-weight: bold;
+	color: black;
+    padding: 15px;
+    text-align: left;
+}
+
+tbody{
+    background: #f2f2f2;
+}
+
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+tr:nth-child(even){
+    background: #fff;
+}
+
+tfoot{
+    background: rgba(113, 99, 186, 225);
+    font-weight: bold;
+    color: #fff;
+}
+
+tfoot td{
+    padding: 15px;
+}
+
+.table-container button{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
+button {
+    background-color: #82a0aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #449A44;
+}
+.login-box {
+	width: 400px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	margin: 50px auto;
+	padding: 20px;
+}
+.main-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for the table headers */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #82a0aa;
+    font-weight: bold;
+}
+
+/* Style for the table containers */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Style for the table rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for the action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the delete button */
+/* Style for the delete button */
+.action-buttons button{
+    background-color: #32CD32; /* Set delete button background color to red */
+    color: white; /* Set delete button text color to white */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+}
+.action-buttons button:hover{
+    background-color: green; /* Set delete button background color to red */
+    color: white; /* Set delete button text color to white */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+}
+
+.action-buttons button[type="button"] {
+    background-color: #ff4d4d; /* Set delete button background color to red */
+    color: white; /* Set delete button text color to white */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add transition effect for smooth color change */
+}
+
+/* Hover effect for the delete button */
+.action-buttons button[type="button"]:hover {
+    background-color: #cc0000; /* Darken the button color on hover */
+}
+
+
+
+/* Style for the add product button */
+/* .products-wrapper button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+} */
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
+/* Style for the product images */
+.product-image {
+    max-height: 100px; /* Adjust this value as needed */
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
